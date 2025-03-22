@@ -44,3 +44,37 @@ document.getElementById("question-btn").addEventListener("click", function () {
 document.getElementById("submit").addEventListener("click", function () {
   document.getElementById("responseGemini").innerHTML = "test";
 });
+
+document.getElementById("submit").addEventListener("click", function () {
+    const userAnswer = document.getElementById("message").value;
+
+    // Display the question and answer
+    document.getElementById("userQuestion").innerHTML = "<b>Your Question:</b> " + currentQuestion;
+    document.getElementById("userAnswer").innerHTML = "<b>Your Answer:</b> " + userAnswer;
+
+    // Prepare the data for the POST request
+    const data = {
+      question: currentQuestion,
+      answer: userAnswer,
+    };
+
+    // Make the POST request to the Flask backend
+    fetch("http://127.0.0.1:5000/analyze", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(data),
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        // Display the response from Gemini
+        document.getElementById("responseGemini").innerHTML =
+          "<b>Gemini Feedback:</b> " + data.feedback;
+      })
+      .catch((error) => {
+        console.error("Error sending data to Gemini:", error);
+        document.getElementById("responseGemini").innerHTML =
+          "Error: Could not get feedback from Gemini.";
+      });
+  });
