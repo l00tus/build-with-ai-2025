@@ -1,10 +1,14 @@
 from google import genai
+from google.genai import types
 from google.genai.types import GenerateContentConfig
 from flask import Flask, request, jsonify
+from flask_cors import CORS
 import json
 
 app = Flask(__name__)
-client = genai.Client(api_key="") # add api key
+CORS(app, resources={r"/*": {"origins": "*"}})  # Allow all origins
+
+client = genai.Client(api_key="REDACTED") # add api key
 
 
 @app.route('/analyze', methods=['POST'])
@@ -98,6 +102,25 @@ def analyze_answer():
 
     except Exception as e:
         return jsonify({"error": f"Error during generation: {str(e)}", "raw_response": response.text}), 500
+    
+
+@app.route('/speech', methods=['POST'])
+def speech():
+    with open('help.mp3', 'rb') as f:
+        image_bytes = f.read()
+
+    response = client.models.generate_content(
+        model='gemini-2.0-flash',
+        contents=["Transcriibe this audio clip",
+                  types.Part.from_bytes(
+                      data=image_bytes,
+                      mime_type='audio/mp3'
+                  )
+                  ]
+    )
+    
+    return response.text
+    
 
 if __name__ == '__main__':
     app.run(debug=True)
