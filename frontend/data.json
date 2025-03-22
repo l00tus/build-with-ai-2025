@@ -1,0 +1,72 @@
+[
+    {
+      "id": 1,
+      "question": "Descrie o situație în care ai avut un conflict cu un coleg. Cum l-ai gestionat și care a fost rezultatul?",
+      "category": "Rezolvare de conflicte"
+    },
+    {
+      "id": 2,
+      "question": "Povestește despre un moment în care ai primit feedback negativ. Cum ai reacționat și cum ai folosit acel feedback pentru a te îmbunătăți?",
+      "category": "Receptivitate la feedback"
+    },
+    {
+      "id": 3,
+      "question": "Dă un exemplu de proiect în care ai lucrat în echipă. Care a fost rolul tău, care au fost provocările și cum ați depășit obstacolele împreună?",
+      "category": "Lucru în echipă"
+    },
+    {
+      "id": 4,
+      "question": "Cum te asiguri că înțelegi pe deplin cerințele unui proiect înainte de a începe să lucrezi? Ce strategii folosești pentru a clarifica eventualele neclarități?",
+      "category": "Comunicare"
+    },
+    {
+      "id": 5,
+      "question": "Descrie o situație în care ai avut de gestionat un termen limită strâns. Cum ai prioritizat sarcinile și cum ai gestionat stresul?",
+      "category": "Gestionarea timpului și a stresului"
+    },
+    {
+      "id": 6,
+      "question": "Ai întâmpinat vreodată o problemă tehnică dificilă? Cum ai abordat-o, ce resurse ai folosit și cum ai găsit soluția?",
+      "category": "Rezolvare de probleme"
+    },
+    {
+      "id": 7,
+      "question": "Descrie o situație în care ai trebuit să te adaptezi rapid la o schimbare neașteptată (de exemplu, o schimbare de priorități, o nouă tehnologie, etc.). Cum te-ai descurcat?",
+      "category": "Adaptabilitate"
+    },
+    {
+      "id": 8,
+      "question": "Cum te menții la curent cu ultimele tendințe și tehnologii din domeniul IT? Ce resurse folosești și cum aplici aceste cunoștințe în munca ta?",
+      "category": "Învățare continuă"
+    },
+    {
+      "id": 9,
+      "question": "Descrie o situație în care ai trebuit să iei o decizie dificilă cu impact asupra echipei sau a proiectului. Cum ai analizat opțiunile și cum ai luat decizia finală?",
+      "category": "Luarea deciziilor"
+    },
+    {
+      "id": 10,
+      "question": "Ai fost vreodată într-o situație în care valorile tale personale au intrat în conflict cu cerințele unui proiect sau ale companiei? Cum ai gestionat situația?",
+      "category": "Etică și integritate"
+    },
+    {
+      "id": 11,
+      "question": "Ce faci când nu știi răspunsul la o întrebare tehnică?",
+      "category": "Inițiativă și resurse"
+    },
+    {
+      "id": 12,
+      "question": "Cum gestionezi situațiile în care simți că ești suprasolicitat?",
+      "category": "Gestionarea volumului de muncă"
+    },
+      {
+      "id": 13,
+      "question": "Cum te asiguri că înțelegi perspectiva altor membri ai echipei, mai ales când aveți opinii diferite?",
+      "category": "Empatie si Ascultare Activa"
+    },
+     {
+      "id": 14,
+      "question": "Dă un exemplu de situație în care ai eșuat. Ce ai învățat din acea experiență și cum ai aplicat lecțiile învățate în proiecte ulterioare?",
+      "category": "Invatare din Esec"
+    }
+  ]

@@ -42,7 +42,7 @@ textarea {
     box-sizing: border-box;
 }
 
-.responseGemini{
+#responseGemini{
     width: calc(100% - 20px);
     padding: 10px;
     margin-top: 5px;
@@ -51,7 +51,6 @@ textarea {
     box-sizing: border-box;
 }
 button {
-    width: 20%;
     padding: 10px;
     background: #007BFF;
     color: #fff;
