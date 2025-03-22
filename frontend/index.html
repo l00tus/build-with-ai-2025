@@ -14,7 +14,26 @@
         <div id="question">
             
         </div>
+        
         <textarea id="message" name="message" rows="10" placeholder="Enter your answer here..." required></textarea>
+        <!-- Add these elements to your HTML file near the answer textarea -->
+<div class="recording-controls">
+    <button id="startRecordBtn" onclick="startRecording()">
+      <i class="fas fa-microphone"></i> Record Answer
+    </button>
+    
+    <button id="stopRecordBtn" onclick="stopRecording()" disabled>
+      <i class="fas fa-stop"></i> Stop Recording
+    </button>
+    
+    <span id="recordingIndicator" style="display: none; color: red;">
+      Recording...
+    </span>
+    
+    <span id="loadingIndicator" style="display: none;">
+      Transcribing...
+    </span>
+  </div>
         <button id="submit" type="submit">Submit</button>
         <p id="some">or</p>
         <button id="submit-speech" type="submit">Transcribe text from audio file</button>

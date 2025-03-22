@@ -103,7 +103,36 @@ def analyze_answer():
     except Exception as e:
         return jsonify({"error": f"Error during generation: {str(e)}", "raw_response": response.text}), 500
     
+# ...existing code...
 
+@app.route('/transcribe-mic', methods=['POST'])
+def transcribe_mic():
+    if 'audio' not in request.files:
+        return jsonify({"error": "No audio file provided"}), 400
+    
+    audio_file = request.files['audio']
+    if audio_file.filename == '':
+        return jsonify({"error": "No audio file selected"}), 400
+    
+    # Read the audio bytes
+    audio_bytes = audio_file.read()
+    
+    try:
+        response = client.models.generate_content(
+            model='gemini-2.0-flash',
+            contents=["Transcribe this audio clip",
+                    types.Part.from_bytes(
+                        data=audio_bytes,
+                        mime_type='audio/webm' # Common format for browser recordings
+                    )
+                    ]
+        )
+        
+        return jsonify({"answer": response.text})
+    except Exception as e:
+        return jsonify({"error": f"Error during transcription: {str(e)}"}), 500
+
+# ...existing code...
 @app.route('/speech', methods=['POST'])
 def speech():
     with open('audio1.mp3', 'rb') as f:

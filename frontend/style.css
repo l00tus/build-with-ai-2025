@@ -8,7 +8,48 @@ body {
     align-items: center;
     margin: 0;
 }
-
+/* Add to your CSS file */
+.recording-controls {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  #startRecordBtn, #stopRecordBtn {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  #startRecordBtn {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  #stopRecordBtn {
+    background-color: #f44336;
+    color: white;
+  }
+  
+  #startRecordBtn:disabled, #stopRecordBtn:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+  }
+  
+  #recordingIndicator {
+    animation: blink 1s infinite;
+  }
+  
+  @keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
+  }
 .container {
     background: #fff;
     padding: 30px;
