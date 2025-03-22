@@ -1,72 +1,72 @@
 [
-    {
-      "id": 1,
-      "question": "Descrie o situație în care ai avut un conflict cu un coleg. Cum l-ai gestionat și care a fost rezultatul?",
-      "category": "Rezolvare de conflicte"
-    },
-    {
-      "id": 2,
-      "question": "Povestește despre un moment în care ai primit feedback negativ. Cum ai reacționat și cum ai folosit acel feedback pentru a te îmbunătăți?",
-      "category": "Receptivitate la feedback"
-    },
-    {
-      "id": 3,
-      "question": "Dă un exemplu de proiect în care ai lucrat în echipă. Care a fost rolul tău, care au fost provocările și cum ați depășit obstacolele împreună?",
-      "category": "Lucru în echipă"
-    },
-    {
-      "id": 4,
-      "question": "Cum te asiguri că înțelegi pe deplin cerințele unui proiect înainte de a începe să lucrezi? Ce strategii folosești pentru a clarifica eventualele neclarități?",
-      "category": "Comunicare"
-    },
-    {
-      "id": 5,
-      "question": "Descrie o situație în care ai avut de gestionat un termen limită strâns. Cum ai prioritizat sarcinile și cum ai gestionat stresul?",
-      "category": "Gestionarea timpului și a stresului"
-    },
-    {
-      "id": 6,
-      "question": "Ai întâmpinat vreodată o problemă tehnică dificilă? Cum ai abordat-o, ce resurse ai folosit și cum ai găsit soluția?",
-      "category": "Rezolvare de probleme"
-    },
-    {
-      "id": 7,
-      "question": "Descrie o situație în care ai trebuit să te adaptezi rapid la o schimbare neașteptată (de exemplu, o schimbare de priorități, o nouă tehnologie, etc.). Cum te-ai descurcat?",
-      "category": "Adaptabilitate"
-    },
-    {
-      "id": 8,
-      "question": "Cum te menții la curent cu ultimele tendințe și tehnologii din domeniul IT? Ce resurse folosești și cum aplici aceste cunoștințe în munca ta?",
-      "category": "Învățare continuă"
-    },
-    {
-      "id": 9,
-      "question": "Descrie o situație în care ai trebuit să iei o decizie dificilă cu impact asupra echipei sau a proiectului. Cum ai analizat opțiunile și cum ai luat decizia finală?",
-      "category": "Luarea deciziilor"
-    },
-    {
-      "id": 10,
-      "question": "Ai fost vreodată într-o situație în care valorile tale personale au intrat în conflict cu cerințele unui proiect sau ale companiei? Cum ai gestionat situația?",
-      "category": "Etică și integritate"
-    },
-    {
-      "id": 11,
-      "question": "Ce faci când nu știi răspunsul la o întrebare tehnică?",
-      "category": "Inițiativă și resurse"
-    },
-    {
-      "id": 12,
-      "question": "Cum gestionezi situațiile în care simți că ești suprasolicitat?",
-      "category": "Gestionarea volumului de muncă"
-    },
-      {
-      "id": 13,
-      "question": "Cum te asiguri că înțelegi perspectiva altor membri ai echipei, mai ales când aveți opinii diferite?",
-      "category": "Empatie si Ascultare Activa"
-    },
-     {
-      "id": 14,
-      "question": "Dă un exemplu de situație în care ai eșuat. Ce ai învățat din acea experiență și cum ai aplicat lecțiile învățate în proiecte ulterioare?",
-      "category": "Invatare din Esec"
-    }
-  ]
+  {
+    "id": 1,
+    "question": "Describe a situation where you had a conflict with a colleague. How did you manage it and what was the outcome?",
+    "category": "Conflict Resolution"
+  },
+  {
+    "id": 2,
+    "question": "Tell me about a time you received negative feedback. How did you react and how did you use that feedback to improve?",
+    "category": "Receptiveness to Feedback"
+  },
+  {
+    "id": 3,
+    "question": "Give an example of a project where you worked as part of a team. What was your role, what were the challenges, and how did you overcome the obstacles together?",
+    "category": "Teamwork"
+  },
+  {
+    "id": 4,
+    "question": "How do you ensure that you fully understand the requirements of a project before starting to work? What strategies do you use to clarify any ambiguities?",
+    "category": "Communication"
+  },
+  {
+    "id": 5,
+    "question": "Describe a situation where you had to manage a tight deadline. How did you prioritize tasks and how did you manage stress?",
+    "category": "Time and Stress Management"
+  },
+  {
+    "id": 6,
+    "question": "Have you ever encountered a difficult technical problem? How did you approach it, what resources did you use, and how did you find the solution?",
+    "category": "Problem Solving"
+  },
+  {
+    "id": 7,
+    "question": "Describe a situation where you had to adapt quickly to an unexpected change (e.g., a change of priorities, a new technology, etc.). How did you handle it?",
+    "category": "Adaptability"
+  },
+  {
+    "id": 8,
+    "question": "How do you stay up to date with the latest trends and technologies in the IT field? What resources do you use and how do you apply this knowledge in your work?",
+    "category": "Continuous Learning"
+  },
+  {
+    "id": 9,
+    "question": "Describe a situation where you had to make a difficult decision with an impact on the team or the project. How did you analyze the options and how did you make the final decision?",
+    "category": "Decision Making"
+  },
+  {
+    "id": 10,
+    "question": "Have you ever been in a situation where your personal values conflicted with the requirements of a project or the company? How did you manage the situation?",
+    "category": "Ethics and Integrity"
+  },
+  {
+    "id": 11,
+    "question": "What do you do when you don't know the answer to a technical question?",
+    "category": "Initiative and Resources"
+  },
+  {
+    "id": 12,
+    "question": "How do you manage situations where you feel overwhelmed?",
+    "category": "Workload Management"
+  },
+  {
+    "id": 13,
+    "question": "How do you ensure that you understand the perspective of other team members, especially when you have different opinions?",
+    "category": "Empathy and Active Listening"
+  },
+  {
+    "id": 14,
+    "question": "Give an example of a situation where you failed. What did you learn from that experience and how did you apply the lessons learned in subsequent projects?",
+    "category": "Learning from Failure"
+  }
+]
