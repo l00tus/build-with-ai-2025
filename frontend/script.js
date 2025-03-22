@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
   let currentQuestion = "";
   const questionDisplay = document.getElementById("question");
   const submitButton = document.getElementById("submit");
+  const submitSpeechButton = document.getElementById("submit-speech");
 
   function updateTimer() {
     let minutes = Math.floor(timeLeft / 60);
@@ -38,6 +39,12 @@ document.addEventListener("DOMContentLoaded", function () {
         const randomIndex = Math.floor(Math.random() * data.length);
         currentQuestion = data[randomIndex].question;
         questionDisplay.innerHTML = currentQuestion;
+
+        //clear text boxes
+        document.getElementById("message").value = "";
+        document.getElementById("responseGemini").innerHTML = "";
+
+        //reset timer
         resetTimer();
       })
       .catch((error) => {
@@ -67,7 +74,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const feedback = responseData.feedback;
 
         // Format the feedback for display
-        let feedbackText = "<b>Overall Assessment:</b> " + feedback.overall_assessment + "<br><br>";
+        let feedbackText = "<b>Overall Assessment:</b><br> " + feedback.overall_assessment + "<br><br>";
 
         feedbackText += "<b>Strengths:</b><br>";
         feedback.strengths.forEach(strength => {
@@ -105,9 +112,29 @@ document.addEventListener("DOMContentLoaded", function () {
       });
   }
 
-  updateTimer();
-  timerInterval = setInterval(updateTimer, 1000);
+  function submitSpeech() {
+    fetch("http://127.0.0.1:5000/speech", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+    })
+      .then((response) => response.json())
+      .then((responseData) => {
+        const speechText = responseData.answer;
+  
+        document.getElementById("message").value = speechText;
+      })
+      .catch((error) => {
+        console.error("Error sending data to Gemini:", error);
+        document.getElementById("message").value = "Error: Could not get feedback from Gemini.";
+      });
+  }
+
+  // updateTimer();
+  // timerInterval = setInterval(updateTimer, 1000);
 
   document.getElementById("question-btn").addEventListener("click", generateQuestion);
   submitButton.addEventListener("click", submitAnswer);
+  submitSpeechButton.addEventListener("click", submitSpeech);
 });

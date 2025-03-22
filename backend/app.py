@@ -106,12 +106,12 @@ def analyze_answer():
 
 @app.route('/speech', methods=['POST'])
 def speech():
-    with open('help.mp3', 'rb') as f:
+    with open('audio1.mp3', 'rb') as f:
         image_bytes = f.read()
 
     response = client.models.generate_content(
         model='gemini-2.0-flash',
-        contents=["Transcriibe this audio clip",
+        contents=["Transcribe this audio clip",
                   types.Part.from_bytes(
                       data=image_bytes,
                       mime_type='audio/mp3'
@@ -119,7 +119,7 @@ def speech():
                   ]
     )
     
-    return response.text
+    return jsonify({ "answer": response.text })
     
 
 if __name__ == '__main__':
