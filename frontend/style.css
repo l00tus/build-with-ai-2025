@@ -6,7 +6,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
     margin: 0;
 }
 
@@ -22,6 +21,10 @@ body {
     align-items: center;
     margin: 0 auto;
     position: relative; /* Required for absolute positioning of the timer within the container */
+}
+
+#question {
+    text-align: center;
 }
 
 label {
