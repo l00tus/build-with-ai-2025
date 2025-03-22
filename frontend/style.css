@@ -35,7 +35,7 @@ label {
 textarea {
     width: calc(100% - 20px);
     padding: 10px;
-    margin-top: 5px;
+    margin-top: 15px;
     border: 1px solid #ccc;
     border-radius: 5px;
     resize: none;
@@ -59,6 +59,7 @@ button {
     cursor: pointer;
     margin-top: 15px;
     font-size: 16px;
+    margin-bottom: 20px;
 }
 
 button:hover {
