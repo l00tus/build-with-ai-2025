@@ -16,10 +16,22 @@ def analyze_answer():
         return jsonify({"error": "Missing question or answer"}), 400
 
     prompt = f"""
-    aici o sa fie prompt
+    Prompt: You are an HR professional or employer conducting an interview. Your task is to provide constructive feedback on a candidate's answer to a soft skills question.  Focus on areas for improvement, highlighting both strengths and weaknesses in their response.  Offer specific suggestions on how the candidate could improve their answer in future interviews.
+
+
+    System prompt: You will be provided with the following:
+
+    Soft Skills Question: {question}
+    Candidate Answer: {answer}
+
+    Instructions:
+
+    1. Carefully analyze the candidate_answer in relation to the soft_skills_question.
+    2. Identify both the strengths and weaknesses of the candidate_answer.
+    3. Provide specific and actionable feedback on how the candidate could improve their response in future interviews.
+    4. Focus on clarity, conciseness, and relevance to the question.
+    5. Maintain a professional and objective tone in your feedback.
     
-    Question: {question}
-    Answer: {answer}
     """
     
     response = client.models.generate_content(
