@@ -42,15 +42,10 @@ document.getElementById("question-btn").addEventListener("click", function () {
 });
 
 document.getElementById("submit").addEventListener("click", function () {
-  document.getElementById("responseGemini").innerHTML = "test";
-});
-
-document.getElementById("submit").addEventListener("click", function () {
     const userAnswer = document.getElementById("message").value;
+    const currentQuestion = document.getElementById("question").innerHTML;
 
-    // Display the question and answer
-    document.getElementById("userQuestion").innerHTML = "<b>Your Question:</b> " + currentQuestion;
-    document.getElementById("userAnswer").innerHTML = "<b>Your Answer:</b> " + userAnswer;
+    console.log(userAnswer, currentQuestion);
 
     // Prepare the data for the POST request
     const data = {
